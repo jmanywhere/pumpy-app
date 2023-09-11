@@ -14,7 +14,7 @@ export default function Home() {
           alt="squareLogo"
         />
         <div className="self-end">
-          <Image src="/Group 2.svg" width={77} height={74} alt="stars2" />
+          <Image src="/Group 2.svg" width={60} height={60} alt="stars2" />
         </div>
       </section>
     </main>
