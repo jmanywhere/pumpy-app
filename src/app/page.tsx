@@ -1,3 +1,4 @@
+import MintSection from "@/components/nft/MintSection";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
           <Image src="/Group 2.svg" width={60} height={60} alt="stars2" />
         </div>
       </section>
+      <MintSection />
     </main>
   );
 }

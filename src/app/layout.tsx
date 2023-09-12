@@ -1,5 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
+import { Orbitron } from "next/font/google";
 
 const nextSphere = localFont({
   src: "./fonts/NextSphereBlack.ttf",
@@ -10,6 +11,16 @@ const nexa = localFont({
   variable: "--font-nexa",
   display: "swap",
 });
+const nexaHeavy = localFont({
+  src: "./fonts/Nexa-Heavy.ttf",
+  variable: "--font-nexa-heavy",
+  display: "swap",
+});
+const orbitron = Orbitron({
+  subsets: ["latin"],
+  variable: "--font-orbitron",
+  weight: ["900"],
+});
 
 export default function RootLayout({
   children,
@@ -18,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${nextSphere.variable} ${nexa.variable}`}>
+      <body
+        className={`${nextSphere.variable} ${nexa.variable} ${nexaHeavy.variable} ${orbitron.variable}`}
+      >
         <Providers>
           <Header />
           {children}

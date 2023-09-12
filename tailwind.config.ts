@@ -16,6 +16,8 @@ const config: Config = {
       fontFamily:{
         'next-sphere': ["var(--font-next-sphere)"],
         'nexa': ["var(--font-nexa)"],
+        'nexa-heavy': ["var(--font-nexa-heavy)"],
+        'orbitron': ["var(--font-orbitron)"],
       }
     },
   },
@@ -26,6 +28,7 @@ const config: Config = {
       {
         'pumpyTheme':{
           'primary': '#FFB000',
+          'secondary': "#EC4355"
         }
       }
     ]
